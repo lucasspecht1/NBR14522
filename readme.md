@@ -5,6 +5,7 @@ Modbus [![Build Status](https://travis-ci.org/Cloud-Automation/node-modbus.png)]
 
 💾 Status
 ------
+Ultima revisão: 24/10/2023
 
 Versão 0.1.3 é uma versão estável funcional, em processo de aprimoramento
 
@@ -15,14 +16,14 @@ Versão 0.1.3 é uma versão estável funcional, em processo de aprimoramento
 
 import ComunicacaoNBR from NBR14522
 
-''' Instancia a Classe e possui como argumentos:
+''' Instancia da Classe possuindo os argumentos:
  - IP str (Ip do equipamento alvo)
  - PORT int (Porta de comunicação)
 '''
 Smf = ComunicacaoNBR('localhost', 5006)
 
 ''' Envia o comando 26 (Receber memoria de massa atual),
-    Com alvo na leitora de comunicação 123455,
+    Com alvo na leitora de comunicação 123456
 '''
 Smf.enviar_comando(26, 123456)
 
